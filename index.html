@@ -7,26 +7,30 @@
       Booki Site de Recherche d'Hébergements et d'Activités - Trouvez votre
       Ville
     </title>
+    <!-- Balise méta pour la description du site -->
     <meta
       name="description"
-      content="Bienvenue sur le site de Booki site de recherche d'hébergements et d'activités qui vous permet de découvrir et de réserver des logements et des expériences uniques dans la ville de votre choix.  nous créons une interface exceptionnelle pour simplifier vos recherches et rendre votre voyage mémorable."
+      content="Bienvenue sur le site de Booki, un site de recherche d'hébergements et d'activités qui vous permet de découvrir et de réserver des logements et des expériences uniques dans la ville de votre choix. Nous créons une interface exceptionnelle pour simplifier vos recherches et rendre votre voyage mémorable."
     />
-    <meta
-      name="keywords"
-      content="Hébergement, Activités, Voyages, Réservation en ligne, Découverte de ville, Destinations touristiques, Expériences locales, Séjour, Guide de voyage, Logements, Attractions touristiques, Visites guidées, Tourisme, Planification de voyage, Auberges, Itinéraires, Vacances, Séjour personnalisé, Explorez la ville"
-    />
+    <!-- Balise méta pour l'auteur du site -->
     <meta name="author" content="Booki" />
+    <!-- Balise pour l'icône du site (favicon) -->
     <link rel="icon" href="./images/logo/Booki.png" type="image/x-icon" />
+    <!-- Balise méta pour indiquer aux robots de moteurs de recherche de l'indexer et de suivre les liens -->
     <meta name="robots" content="index, follow" />
+    <!-- Balise méta pour indiquer la langue du site -->
     <meta name="language" content="French" />
+    <!-- Balises méta spécifiques à Google et Bing pour l'indexation et le suivi -->
     <meta name="googlebot" content="index, follow" />
     <meta name="bingbot" content="index, follow" />
+    <!-- font raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesone  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -34,11 +38,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- link style.css  -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <div class="main-container">
+      <!-- nav+logo  -->
       <header>
         <div class="logo-booki">
           <a href="index.html"
@@ -60,12 +66,13 @@
         </nav>
       </header>
       <main>
-        <section class="recherche-description">
+        <!-- section search and description  -->
+        <section class="search-and-description">
           <div class="description">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
           </div>
-          <div class="recherche">
+          <div class="search">
             <form method="post" action="#" id="formulaire">
               <i class="fa-solid fa-location-dot"></i>
               <input
@@ -73,30 +80,31 @@
                 name="localisation"
                 placeholder="Marseille, France"
               />
-              <button type="button" class="bouton-recherche">Rechercher</button>
-              <button type="button" class="bouton-recherche-mobile">
+              <button type="button" class="search-btn">Rechercher</button>
+              <button type="button" class="search-btn-mobile">
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
           </div>
+          <!-- section filter  -->
         </section>
-        <div class="filtres-infos">
-          <div class="filtres">
-            <div class="filtres-titre">Filtres</div>
-            <div class="filtres-selections">
-              <div class="filtres-boutons">
+        <div class="filters-infos">
+          <div class="filters">
+            <div class="filters-title">Filtres</div>
+            <div class="filters-selections">
+              <div class="filters-btn">
                 <i class="fa-solid fa-money-bill-wave"></i>
                 <p id="filtre_economique">Économique</p>
               </div>
-              <div class="filtres-boutons">
+              <div class="filters-btn">
                 <i class="fa-solid fa-person"></i>
                 <p id="filtre_familial">Familial</p>
               </div>
-              <div class="filtres-boutons">
+              <div class="filters-btn">
                 <i class="fa-solid fa-heart"></i>
                 <p id="filtre_romantique">Romantique</p>
               </div>
-              <div class="filtres-boutons">
+              <div class="filters-btn">
                 <i class="fa-solid fa-fire"></i>
                 <p id="filtre_pépites">Nos pépites</p>
               </div>
@@ -109,10 +117,14 @@
             </p>
           </div>
         </div>
+        <section>
+          
+        <!-- conatiner hebergements and populaires  -->
         <div class="hebergements-and-populaires" id="hebergements_populaires">
+          <!-- section hebergements -->
           <section class="hebergements">
             <div class="hebergements-title">
-              <h2 class="section-title">Hébregements à Marseille</h2>
+              <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-row-01">
               <a href="#">
@@ -286,8 +298,10 @@
                 </article>
               </a>
             </div>
-            <div id="afficher_plus"><a href="#">Afficher plus</a></div>
+            <!-- more  -->
+            <div id="more"><a href="#">Afficher plus</a></div>
           </section>
+          <!-- section populaires  -->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
@@ -383,6 +397,7 @@
             </div>
           </section>
         </div>
+        <!-- section activites -->
         <section class="activites" id="activites">
           <div class="activites-title">
             <h2 class="section-title">Activités à Marseille</h2>
@@ -443,6 +458,7 @@
           </div>
         </section>
       </main>
+      <!-- footer  -->
       <footer>
         <section class="footer-informations">
           <div>

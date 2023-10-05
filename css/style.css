@@ -134,7 +134,7 @@ li.activites-nav:active a {
 
 /****** Recherche ***********/
 
-.recherche-description {
+.search-and-description {
     display: flex;
     flex-direction: column;
     margin: 15px 0px 32px 0px;
@@ -178,7 +178,7 @@ input {
     font-size: 1.125em;
 }
 
-.bouton-recherche {
+.search-btn {
     color: white;
     background-color: var(--main-color);
     border: 0px solid transparent;
@@ -188,35 +188,35 @@ input {
     font-weight: 700;
 }
 
-.bouton-recherche:hover {
+.search-btn:hover {
     cursor: pointer;
 }
 
 /****** Filtres ***********/
 
-.filtres-infos {
+.filters-infos {
     display: flex;
     flex-direction: column;
 }
 
-.filtres-titre {
+.filters-title {
     font-size: 1.125em;
     font-weight: 700;
 }
 
-.filtres {
+.filters {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 32px;
 }
 
-.filtres-selections {
+.filters-selections {
     display: flex;
     gap: 15px;
 }
 
-.filtres-boutons {
+.filters-btn {
     font-size: 1.063em;
     font-weight: 700;
     display: flex;
@@ -227,7 +227,7 @@ input {
     gap: 10px;
 }
 
-.filtres-boutons:hover {
+.filters-btn:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
@@ -331,7 +331,7 @@ input {
     border-top-right-radius: 20px;
 }
 
-#afficher_plus {
+#more {
     font-size: 1.125em;
     font-weight: 700;
 }
@@ -480,7 +480,7 @@ footer {
 
 /* Large devices (more than 992px) */
 @media screen and (min-width: 993px) {
-    .bouton-recherche-mobile {
+    .search-btn-mobile {
         display: none;
     }
 }
@@ -489,7 +489,7 @@ footer {
 @media (max-width: 1024px) and (min-width: 767.99px) {
     /****** Recherche ***********/
 
-    .bouton-recherche-mobile {
+    .search-btn-mobile {
         display: none;
     }
 
@@ -618,15 +618,13 @@ footer {
         border-top: 0;
     }
 
-    /****** Recherche ***********/
-
-    .recherche-description {
+    /****** Recherche *********search-btn-description {
         display: flex;
         margin-left: 25px;
         margin-right: 25px;
     }
 
-    .bouton-recherche {
+    .search-btn {
         display: none;
     }
 
@@ -635,7 +633,7 @@ footer {
         width: 100%;
     }
 
-    .bouton-recherche-mobile {
+    .search-btn-mobile {
         display: block;
         background-color: #0065fc;
         border: 0px solid transparent;
