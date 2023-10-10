@@ -620,7 +620,7 @@ footer {
         border-top: 0;
     }
 
-    /****** Recherche *********search-btn-description {
+    search-btn-description {
         display: flex;
         margin-left: 25px;
         margin-right: 25px;
@@ -649,6 +649,7 @@ footer {
     .fa-magnifying-glass {
         color: var(--filter-bg-color);
     }
+
 
     /****** Filtres ***********/
 
